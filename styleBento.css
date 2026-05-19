@@ -1,0 +1,540 @@
+*{
+margin: 0;
+padding:0;
+box-sizing: border-box;
+}    
+html,
+body {
+width: 100%;
+height: 100%;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+:root{
+    --primary-color:#FCE5E6;
+    --secondary-color:#fbf7f8;
+    --third-color:#fcf8f9;
+    --fourth-color:#fbf7f8;
+    --fifth-color:#1e1e1e;
+    --sixth-color:#f9efef;
+    --seventh-color:#fae9ec;
+    --eighth-color:#f9f1f3;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding: 20px;
+    gap: 10px;
+    grid-template-columns:23fr 20fr 7fr 27fr 23fr ;
+    grid-template-rows:   29fr 26fr 7fr 18fr 20fr ;
+    grid-template-areas:
+
+ /*row 1  */ "topl topm1 topm1 topm2 topr"
+ /*row 2  */ "topl mid   mid   mid   topr"
+ /*row 3  */ "bottoml mid mid  mid  topr"
+ /*row 4  */ "bottoml mid mid mid   bottomr"
+ /*row 5  */ "bottoml bottoml2 bottoml3 bottoml3 bottomr"
+    
+    ;
+  
+}
+
+main > div{
+    border-radius: 30px;
+}
+
+
+
+/* -------------mid end----------------------- */
+
+
+/* ---------------------------topl------------------------------------- */
+.topl{
+    background-color: var(--primary-color);
+    grid-area: topl;
+    padding: 20px;
+}
+
+.topl .toplstart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+
+}
+.topl .toplstart h2{
+    font-size: 20px;  
+    height: 100px;
+   
+}
+.topl .toplstart i{
+    font-size: 25px; 
+    margin-bottom: 50px;
+    
+}
+
+.toplmiddle{
+    height: 41%;
+}
+.toplmiddle img{
+    height: 150px;
+    margin-left: 80px;
+}
+.toplbottom{
+    height: 135px;
+    padding: 0 20px;
+}
+.toplbottom h2{
+    font-size: 40px;
+    font-weight: 200;
+  
+}
+.toplbottom p{
+    font-size: 15px;
+  
+}
+.toplbottom button{
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin-top: 7px;
+    border: none;
+}
+/* --------------------------------------topl end-------------------------------------- */
+
+/* --------------------------------------topmid1------------------------------------------ */
+
+.topm1{
+    background-color: var(--secondary-color);
+    grid-area: topm1;
+    padding: 20px 50px;
+}
+.topm1 .start{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topm1 .start h1{
+    font-size: 55px;
+    
+}
+.topm1 .start i{
+    color: #FF627A;
+font-size: 30px;
+background-color: var(--primary-color);
+padding: 7px;
+border-radius: 50px;
+margin-right: 50px;
+
+}
+.topm1 p{
+    font-weight: 100;
+
+}
+.topm1 .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 90px;
+    gap: 20px;
+}
+.topm1 .end h5{
+    font-weight: 100;
+    font-size: 15px;
+    color:grey ;
+    margin-top: 12px;
+}
+
+.topm1 .end i{
+  color: #FF627A;
+}
+.topm1 .end button{
+    padding: 7px 20px;
+    margin-top: 19px;
+    border-radius: 40px;
+    border: 1px solid #FF627A;
+    color: #FF627A;
+    background-color: transparent;
+}
+
+
+
+
+/* ---------------------------------------topmid1 end---------------------------------- */
+ /*---------------------------------------topmid2--------------------------------------- */ 
+
+.topm2{
+    background-color: var(--third-color);
+    grid-area: topm2;
+    padding: 30px;
+}
+.topm2 h1{
+    font-size:65px
+}
+.topm2 h2 , .topm2 i{
+    color: #4ba566;
+    margin-bottom: 5px;
+}
+.topm2 h6{
+    font-size: 15px;
+}
+.topm2 .end{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.end .right i{
+    font-size: 30px;
+    margin-right: 30px;
+    color: #1e1e1e;
+    height: 30px;
+    background-color:#fce2e5;
+    padding: 10px;
+    border-radius:20px ;
+    
+}
+ /*---------------------------------------topmid2 end----------------------------------- */ 
+
+ /*---------------------------------------topr ----------------------------------- */ 
+.topr{
+    background-color: var(--fourth-color);
+    grid-area: topr;
+    padding: 20px 30px;
+}
+
+.profile-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 20px;
+}
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #7070704a;
+    margin-bottom: 20px;
+}
+
+.profiles img ,.more{
+     width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  margin-left: -12px;
+}
+.more{
+  background: #4a4a4a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+}       
+
+.top1bottom h1{
+    font-size: 70px;
+}
+.top1bottom h3 ,i{
+    color: #f78094;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.top1bottom h6{
+    font-size: 15px;
+    color: grey;
+}
+
+.userplus{
+    background-color:#fce2e5 ;
+    height: 60px;
+    width: 60px;
+ border-radius: 20px;
+ display: flex;
+ align-items: center;
+ justify-content:center ;
+ position: absolute;
+ top: 43%;
+ right: 6%;
+}
+.userplus i{
+    color:black;
+    font-size: 32px;
+}
+
+ /*---------------------------------------topr end----------------------------------- */
+
+ /*---------------------------------------mid----------------------------------- */
+
+/* --------------mid section------- */
+.mid{
+    background-color: #FCE5E6;
+    grid-area: mid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:   hidden ;
+     
+}
+
+.mid .midcircle{
+ height: 390px;
+ width: 390px;
+ background-color: #FDD6DA;
+ border-radius: 50%;
+
+ 
+}
+.midcircle img{
+    height: 390px;
+    position:absolute ;
+    top: 25.3%;
+    left: 42.5%;
+}
+
+#midimg1{
+    position: absolute;
+    height: 100px;
+    top: 35%;
+    left: 32%;
+}
+#midimg2{
+    position: absolute;
+    height: 150px;
+    top: 35%;
+    right: 32%;
+}
+#midimg3{
+    position: absolute;
+    height: 70px;
+    top: 61%;
+    right: 32%;
+}
+#midimg4{
+    position: absolute;
+    height: 120px;
+    top: 55%;
+    left:32%;
+}
+
+
+
+
+
+
+ /*---------------------------------------mid end----------------------------------- */
+ 
+ 
+/* -------------------------------------bottoml-------------------------------------- */
+
+.bottoml{
+    background-color: var(--fifth-color);
+    grid-area: bottoml;
+    padding: 20px;
+}
+.bottoml .top{
+    color:white;
+    font-size: 20px;
+    display: flex;
+    gap: 40px;
+    
+}
+.bottoml .top span{
+    color:var(--primary-color);
+}
+.bottoml .top i{
+    color:white;
+    height: 40px;
+   width: 40px;
+   background-color: #4a4a4a;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+}
+
+.bottoml .middle{
+    display: flex;
+    align-items:center ;
+ gap: 20px;
+ margin-top: 20px;
+}
+.bottoml .middle .img1{
+    height: 120px;
+    width: 100px;
+    background-color: red;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    background-position: center;
+}
+.bottoml .middle .img2{
+    height: 120px;
+    width: 100px;
+    background-color: rgb(138, 134, 134);
+    border-radius: 10px;
+    overflow: hidden;
+      object-fit: cover;
+    background-position: center;
+}
+.middle .img1 img,.middle .img2 img{
+    height: 100%;
+    width: 100%;
+}
+.bottoml .bottom .profile-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40%;
+}
+
+.bottoml .bottom .profile-group .profiles img ,.more{
+     width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  margin-left: -12px;
+}
+.bottoml .bottom .profile-group .more{
+  background: #ec95a8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+}   
+/* -------------------------------------------bottoml end--------------------------------- */
+
+
+/* -------------------------------------------bottoml2--------------------------------- */
+.bottoml2{
+    background-color: var(--sixth-color);
+    grid-area:bottoml2 ;
+    padding:20px 40px;
+
+}
+.bottoml2 h3{
+    color: black;
+    height: 50px;
+    width:  50px;
+    background-color: #fce2e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.bottoml2 .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.bottoml2 .middle{
+    display: flex ;
+ 
+    height: 40px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.bottoml2 .middle #b1{
+    background-color: #262626;
+    height: 100%;
+    width: 40px;
+    border-radius: 10px;
+}
+.bottoml2 .middle #b2{
+    background-color: #afafaf;
+     height: 100%;
+    width: 40px;
+    border-radius: 10px;
+}
+.bottoml2 .middle #b3{
+    background-color: #fe778f;
+     height: 100%;
+    width: 40px;
+    border-radius: 10px;
+}
+.bottoml2 .middle #b4{
+    background-color: #fdd4d9;
+     height: 100%;
+    width: 40px;
+    border-radius: 10px;
+}
+
+.bottoml2 h4 ,i{
+    color:grey ;
+    margin-top: 10px;
+    
+}
+/* -------------------------------------------bottoml2 end--------------------------------- */
+
+
+/* -------------------------------------------bottoml3------------------------------- */
+.bottoml3{
+    background-color: var(--seventh-color);
+    grid-area:bottoml3 ;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottoml3 .bottoml3left button{
+    margin-top: 10px;
+    padding: 10px 20px;
+   color: white;
+   background-color: #141414;
+   border-radius:30px ;
+
+}
+.bottoml3right{
+    height: 150px;
+    width: 170px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.bottoml3right img{
+    height: 100%;
+ width: 100%;
+ object-fit: cover;
+ background-position: center;
+}
+
+/* -------------------------------------------bottoml3 end------------------------------- */
+
+/* -------------------------------------------bottomr------------------------------- */
+.bottomr{
+    background-color: var(--eighth-color);
+    grid-area: bottomr;
+    padding:25px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottomr img{
+    height: 100px;
+    width: 150px; 
+}
+.bottomr button{
+  margin-top: 10px;
+    padding: 10px 20px;
+   color: black;
+   background-color: #fec9d0;
+   border-radius:30px ;
+   border: none;
+   margin-top: 30px;
+}
+
+
+
+/* -------------------------------------------bottomr end------------------------------- */
