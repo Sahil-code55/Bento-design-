@@ -237,6 +237,7 @@ margin-right: 50px;
   align-items: center;
   font-weight: 600;
   font-size: 18px;
+  padding: 27px;
 }       
 
 .top1bottom h1{
@@ -369,7 +370,6 @@ margin-right: 50px;
 .bottoml .middle .img1{
     height: 120px;
     width: 100px;
-    background-color: red;
     border-radius: 10px;
     overflow: hidden;
     object-fit: cover;
@@ -378,7 +378,6 @@ margin-right: 50px;
 .bottoml .middle .img2{
     height: 120px;
     width: 100px;
-    background-color: rgb(138, 134, 134);
     border-radius: 10px;
     overflow: hidden;
       object-fit: cover;
